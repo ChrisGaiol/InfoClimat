@@ -57,6 +57,15 @@ class ICListInfoClimatViewController: UIViewController, UITableViewDelegate, UIT
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "openDetailViewSegue" {
+            let detailVC = segue.destination as! ICDetailsViewController
+            if let indexPath = self.tableViewInfoClimat.indexPathForSelectedRow {
+                detailVC.infoClimatElement = determineInfoClimatForIndexPath(indexPath)
+            }
+        }
+    }
+    
     // MARK: - ICInfoClimatServiceRequestDelegate
     func didResponseWithInfoClimatElements(_ infoClimatElements: [ICInfoClimatElement], sender:ICServiceRequest) {
         self.infoClimatElementList = infoClimatElements

@@ -27,6 +27,8 @@
 		AA99FF901FAF774000E447EA /* ICInfoClimatElementFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99FF8E1FAF774000E447EA /* ICInfoClimatElementFactory.swift */; };
 		AA99FF921FAF7E1600E447EA /* ICServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99FF911FAF7E1600E447EA /* ICServiceRequest.swift */; };
 		AA99FF931FAF7E1600E447EA /* ICServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99FF911FAF7E1600E447EA /* ICServiceRequest.swift */; };
+		AA99FF951FAF820A00E447EA /* ICDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99FF941FAF820A00E447EA /* ICDetailsViewController.swift */; };
+		AA99FF961FAF820A00E447EA /* ICDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99FF941FAF820A00E447EA /* ICDetailsViewController.swift */; };
 		AAFF4BF01FAF5E1100713D78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF4BEF1FAF5E1100713D78 /* AppDelegate.swift */; };
 		AAFF4BF21FAF5E1200713D78 /* ICListInfoClimatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF4BF11FAF5E1200713D78 /* ICListInfoClimatViewController.swift */; };
 		AAFF4BF51FAF5E1200713D78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAFF4BF31FAF5E1200713D78 /* Main.storyboard */; };
@@ -56,6 +58,7 @@
 		AA99FF8A1FAF76DA00E447EA /* ICInfoClimatServiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICInfoClimatServiceRequest.swift; sourceTree = "<group>"; };
 		AA99FF8E1FAF774000E447EA /* ICInfoClimatElementFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICInfoClimatElementFactory.swift; sourceTree = "<group>"; };
 		AA99FF911FAF7E1600E447EA /* ICServiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICServiceRequest.swift; sourceTree = "<group>"; };
+		AA99FF941FAF820A00E447EA /* ICDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICDetailsViewController.swift; sourceTree = "<group>"; };
 		AAFF4BEC1FAF5E1100713D78 /* InfoClimat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfoClimat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAFF4BEF1FAF5E1100713D78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAFF4BF11FAF5E1200713D78 /* ICListInfoClimatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICListInfoClimatViewController.swift; sourceTree = "<group>"; };
@@ -218,6 +221,7 @@
 			children = (
 				AA99FF7C1FAF6A7400E447EA /* CustomCells */,
 				AAFF4BF11FAF5E1200713D78 /* ICListInfoClimatViewController.swift */,
+				AA99FF941FAF820A00E447EA /* ICDetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -340,6 +344,7 @@
 				AA99FF811FAF6AED00E447EA /* ICInfoClimatTableViewCell.swift in Sources */,
 				AA99FF7E1FAF6AA400E447EA /* ICDayHeaderTableViewCell.swift in Sources */,
 				AA99FF7A1FAF695A00E447EA /* DateExtension.swift in Sources */,
+				AA99FF951FAF820A00E447EA /* ICDetailsViewController.swift in Sources */,
 				AAFF4BF21FAF5E1200713D78 /* ICListInfoClimatViewController.swift in Sources */,
 				AA99FF921FAF7E1600E447EA /* ICServiceRequest.swift in Sources */,
 				AAFF4BF01FAF5E1100713D78 /* AppDelegate.swift in Sources */,
@@ -358,6 +363,7 @@
 				AA99FF891FAF71D600E447EA /* DateExtensionTests.swift in Sources */,
 				AA99FF7B1FAF695A00E447EA /* DateExtension.swift in Sources */,
 				AA99FF721FAF660900E447EA /* ICInfoClimatElementTests.swift in Sources */,
+				AA99FF961FAF820A00E447EA /* ICDetailsViewController.swift in Sources */,
 				AA99FF7F1FAF6AA400E447EA /* ICDayHeaderTableViewCell.swift in Sources */,
 				AA99FF931FAF7E1600E447EA /* ICServiceRequest.swift in Sources */,
 				AA99FF851FAF6FD300E447EA /* ICClimatTypeEnum.swift in Sources */,
