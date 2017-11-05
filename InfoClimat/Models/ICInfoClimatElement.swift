@@ -52,6 +52,24 @@ class ICInfoClimatElement {
     }
     
     /**
+     Climat type depending on other values
+     */
+    var climatType : ICClimatType {
+        if let pluie = pluie, let nebulosite = nebulosite {
+            // If more than 0mm of rain, it's a rainy day
+            if pluie > 0 {
+                return .rainy
+            }
+                // If more than 50% of cloud, it's a cloudy day
+            else if nebulosite > 50.0 {
+                return .cloudy
+            }
+        }
+        // Else, it's a sunny day
+        return .sunny
+    }
+    
+    /**
      Init a ICInfoClimatElement with a date
      - parameter date: Date for the ICInfoClimatElement
      */
