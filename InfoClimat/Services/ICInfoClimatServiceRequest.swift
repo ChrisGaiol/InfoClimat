@@ -38,7 +38,7 @@ class ICInfoClimatServiceRequest : ICServiceRequest {
     private let infoClimatAPIKey = "UUteSVYoUXNUeVViVyFVfABoUGVcKlB3CnYGZQ1oVisCaVY3VDRcOlM9Uy4CLQUzVntVNltgAzNQOwd%2FWylRMFE7XjJWPVE2VDtVMFd4VX4ALlAxXHxQdwphBmcNflY3AmVWO1QpXD5TIlMzAjQFLlZ6VTRbYQM7UDoHZ1s%2BUTdRNF47VjRRLFQkVTJXblU3AGdQOFxjUGgKOwY0DWZWNwJjVmBUN1wgUz5TOAIwBTFWYlU8W2QDPFAsB39bT1FBUS9eelZ3UWZUfVUqVzJVPwBn&_c=08b4f927d24269d729b600bd5aef790d"
     
     weak var delegate: ICInfoClimatServiceRequestDelegate?
-    var latitude : Float = 0.0, longitude : Float = 0.0
+    var latitude : Double = 0.0, longitude : Double = 0.0
     
     /**
      Init a new request for a position
@@ -47,7 +47,7 @@ class ICInfoClimatServiceRequest : ICServiceRequest {
      - parameter longitude : the longitude for the resquest
      - returns : a new ICInfoClimatServiceRequest
      */
-    init(forLatitude latitude : Float, andLongitude longitude : Float) {
+    init(forLatitude latitude : Double, andLongitude longitude : Double) {
         self.latitude = latitude
         self.longitude = longitude
     }

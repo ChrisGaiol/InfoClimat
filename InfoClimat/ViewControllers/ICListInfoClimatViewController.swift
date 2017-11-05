@@ -39,7 +39,7 @@ class ICListInfoClimatViewController: UIViewController, UITableViewDelegate, UIT
      Called when user needs to refresh
      */
     @objc func refreshInfoClimat() {
-        let infoClimatRequest = ICInfoClimatServiceRequest(forLatitude: 48.85341, andLongitude: 2.3488)
+        let infoClimatRequest = ICInfoClimatServiceRequest(forLatitude: ICLocationManager.sharedInstance.latitude, andLongitude: ICLocationManager.sharedInstance.longitude)
         infoClimatRequest.delegate = self
         infoClimatRequest.sendRequest()
     }
