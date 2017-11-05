@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AAFF4BF01FAF5E1100713D78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF4BEF1FAF5E1100713D78 /* AppDelegate.swift */; };
+		AAFF4BF21FAF5E1200713D78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF4BF11FAF5E1200713D78 /* ViewController.swift */; };
+		AAFF4BF51FAF5E1200713D78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAFF4BF31FAF5E1200713D78 /* Main.storyboard */; };
+		AAFF4BF71FAF5E1200713D78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAFF4BF61FAF5E1200713D78 /* Assets.xcassets */; };
+		AAFF4BFA1FAF5E1200713D78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAFF4BF81FAF5E1200713D78 /* LaunchScreen.storyboard */; };
+		AAFF4C051FAF5E1200713D78 /* InfoClimatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF4C041FAF5E1200713D78 /* InfoClimatTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAFF4C011FAF5E1200713D78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAFF4BE41FAF5E1100713D78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAFF4BEB1FAF5E1100713D78;
+			remoteInfo = InfoClimat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AAFF4BEC1FAF5E1100713D78 /* InfoClimat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfoClimat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAFF4BEF1FAF5E1100713D78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AAFF4BF11FAF5E1200713D78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AAFF4BF41FAF5E1200713D78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AAFF4BF61FAF5E1200713D78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAFF4BF91FAF5E1200713D78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AAFF4BFB1FAF5E1200713D78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAFF4C001FAF5E1200713D78 /* InfoClimatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfoClimatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAFF4C041FAF5E1200713D78 /* InfoClimatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoClimatTests.swift; sourceTree = "<group>"; };
+		AAFF4C061FAF5E1200713D78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAFF4BE91FAF5E1100713D78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAFF4BFD1FAF5E1200713D78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAFF4BE31FAF5E1100713D78 = {
+			isa = PBXGroup;
+			children = (
+				AAFF4BEE1FAF5E1100713D78 /* InfoClimat */,
+				AAFF4C031FAF5E1200713D78 /* InfoClimatTests */,
+				AAFF4BED1FAF5E1100713D78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAFF4BED1FAF5E1100713D78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAFF4BEC1FAF5E1100713D78 /* InfoClimat.app */,
+				AAFF4C001FAF5E1200713D78 /* InfoClimatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAFF4BEE1FAF5E1100713D78 /* InfoClimat */ = {
+			isa = PBXGroup;
+			children = (
+				AAFF4C0F1FAF5E3800713D78 /* Models */,
+				AAFF4C101FAF5E4800713D78 /* Datas */,
+				AAFF4C131FAF5E7900713D78 /* Services */,
+				AAFF4C121FAF5E6900713D78 /* ViewControllers */,
+				AAFF4C111FAF5E6100713D78 /* Views */,
+				AAFF4BEF1FAF5E1100713D78 /* AppDelegate.swift */,
+				AAFF4BF61FAF5E1200713D78 /* Assets.xcassets */,
+				AAFF4BFB1FAF5E1200713D78 /* Info.plist */,
+			);
+			path = InfoClimat;
+			sourceTree = "<group>";
+		};
+		AAFF4C031FAF5E1200713D78 /* InfoClimatTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAFF4C041FAF5E1200713D78 /* InfoClimatTests.swift */,
+				AAFF4C061FAF5E1200713D78 /* Info.plist */,
+			);
+			path = InfoClimatTests;
+			sourceTree = "<group>";
+		};
+		AAFF4C0F1FAF5E3800713D78 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AAFF4C101FAF5E4800713D78 /* Datas */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Datas;
+			sourceTree = "<group>";
+		};
+		AAFF4C111FAF5E6100713D78 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AAFF4BF81FAF5E1200713D78 /* LaunchScreen.storyboard */,
+				AAFF4BF31FAF5E1200713D78 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AAFF4C121FAF5E6900713D78 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AAFF4BF11FAF5E1200713D78 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AAFF4C131FAF5E7900713D78 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAFF4BEB1FAF5E1100713D78 /* InfoClimat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAFF4C091FAF5E1200713D78 /* Build configuration list for PBXNativeTarget "InfoClimat" */;
+			buildPhases = (
+				AAFF4BE81FAF5E1100713D78 /* Sources */,
+				AAFF4BE91FAF5E1100713D78 /* Frameworks */,
+				AAFF4BEA1FAF5E1100713D78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InfoClimat;
+			productName = InfoClimat;
+			productReference = AAFF4BEC1FAF5E1100713D78 /* InfoClimat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AAFF4BFF1FAF5E1200713D78 /* InfoClimatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAFF4C0C1FAF5E1200713D78 /* Build configuration list for PBXNativeTarget "InfoClimatTests" */;
+			buildPhases = (
+				AAFF4BFC1FAF5E1200713D78 /* Sources */,
+				AAFF4BFD1FAF5E1200713D78 /* Frameworks */,
+				AAFF4BFE1FAF5E1200713D78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAFF4C021FAF5E1200713D78 /* PBXTargetDependency */,
+			);
+			name = InfoClimatTests;
+			productName = InfoClimatTests;
+			productReference = AAFF4C001FAF5E1200713D78 /* InfoClimatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAFF4BE41FAF5E1100713D78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = LeBonCoin;
+				TargetAttributes = {
+					AAFF4BEB1FAF5E1100713D78 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					AAFF4BFF1FAF5E1200713D78 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AAFF4BEB1FAF5E1100713D78;
+					};
+				};
+			};
+			buildConfigurationList = AAFF4BE71FAF5E1100713D78 /* Build configuration list for PBXProject "InfoClimat" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAFF4BE31FAF5E1100713D78;
+			productRefGroup = AAFF4BED1FAF5E1100713D78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAFF4BEB1FAF5E1100713D78 /* InfoClimat */,
+				AAFF4BFF1FAF5E1200713D78 /* InfoClimatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAFF4BEA1FAF5E1100713D78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAFF4BFA1FAF5E1200713D78 /* LaunchScreen.storyboard in Resources */,
+				AAFF4BF71FAF5E1200713D78 /* Assets.xcassets in Resources */,
+				AAFF4BF51FAF5E1200713D78 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAFF4BFE1FAF5E1200713D78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAFF4BE81FAF5E1100713D78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAFF4BF21FAF5E1200713D78 /* ViewController.swift in Sources */,
+				AAFF4BF01FAF5E1100713D78 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAFF4BFC1FAF5E1200713D78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAFF4C051FAF5E1200713D78 /* InfoClimatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAFF4C021FAF5E1200713D78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAFF4BEB1FAF5E1100713D78 /* InfoClimat */;
+			targetProxy = AAFF4C011FAF5E1200713D78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AAFF4BF31FAF5E1200713D78 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAFF4BF41FAF5E1200713D78 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AAFF4BF81FAF5E1200713D78 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAFF4BF91FAF5E1200713D78 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAFF4C071FAF5E1200713D78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AAFF4C081FAF5E1200713D78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAFF4C0A1FAF5E1200713D78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InfoClimat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leboncoin.InfoClimat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AAFF4C0B1FAF5E1200713D78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InfoClimat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leboncoin.InfoClimat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AAFF4C0D1FAF5E1200713D78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InfoClimatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leboncoin.InfoClimatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InfoClimat.app/InfoClimat";
+			};
+			name = Debug;
+		};
+		AAFF4C0E1FAF5E1200713D78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InfoClimatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leboncoin.InfoClimatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InfoClimat.app/InfoClimat";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAFF4BE71FAF5E1100713D78 /* Build configuration list for PBXProject "InfoClimat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAFF4C071FAF5E1200713D78 /* Debug */,
+				AAFF4C081FAF5E1200713D78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAFF4C091FAF5E1200713D78 /* Build configuration list for PBXNativeTarget "InfoClimat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAFF4C0A1FAF5E1200713D78 /* Debug */,
+				AAFF4C0B1FAF5E1200713D78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAFF4C0C1FAF5E1200713D78 /* Build configuration list for PBXNativeTarget "InfoClimatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAFF4C0D1FAF5E1200713D78 /* Debug */,
+				AAFF4C0E1FAF5E1200713D78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAFF4BE41FAF5E1100713D78 /* Project object */;
+}
