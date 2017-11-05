@@ -8,26 +8,71 @@
 
 import UIKit
 
-class ICListInfoClimatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ICListInfoClimatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, ICInfoClimatServiceRequestDelegate {
     
     @IBOutlet weak var tableViewInfoClimat: UITableView!
     
     var infoClimatElementList : [ICInfoClimatElement] = []
     var orderedInfoClimatElements = Dictionary<Date, [ICInfoClimatElement]>()
+    lazy var refreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        infoClimatElementList = ICInfoClimatElementMock.infoClimatElementArray
-        orderClimatElements()
         
         tableViewInfoClimat.delegate = self
-        self.tableViewInfoClimat.reloadData()
+        
+        refreshControl.addTarget(self, action: #selector(refreshInfoClimat), for: UIControlEvents.valueChanged)
+        tableViewInfoClimat.addSubview(refreshControl)
+        
+        // Launch a request at launching
+        self.refreshControl.beginRefreshing()
+        self.refreshInfoClimat()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // MARK: - UI
+    /**
+     Called when user needs to refresh
+     */
+    @objc func refreshInfoClimat() {
+        let infoClimatRequest = ICInfoClimatServiceRequest(forLatitude: 48.85341, andLongitude: 2.3488)
+        infoClimatRequest.delegate = self
+        infoClimatRequest.sendRequest()
+    }
+    
+    func refreshEndsWithError() {
+        let errorPopup = UIAlertController(title: "Désolé", message: "Impossible de charger les informations actuellement.", preferredStyle: UIAlertControllerStyle.alert)
+        errorPopup.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        self.present(errorPopup, animated: true, completion: nil)
+        
+        // TODO : use cached datas
+        
+        DispatchQueue.main.async {
+            self.refreshControl.endRefreshing()
+            self.tableViewInfoClimat.reloadData()
+        }
+    }
+    
+    // MARK: - ICInfoClimatServiceRequestDelegate
+    func didResponseWithInfoClimatElements(_ infoClimatElements: [ICInfoClimatElement], sender:ICServiceRequest) {
+        self.infoClimatElementList = infoClimatElements
+        orderClimatElements()
+        DispatchQueue.main.async {
+            self.refreshControl.endRefreshing()
+            self.tableViewInfoClimat.reloadData()
+        }
+    }
+    
+    func didResponseWithError(_ error: Error?, sender:ICServiceRequest) {
+        refreshEndsWithError()
+    }
+    
+    func didThrowException(sender: ICServiceRequest) {
+        refreshEndsWithError()
     }
     
     // MARK: - UITableView Delegate / DataSource Implementation
@@ -89,6 +134,8 @@ class ICListInfoClimatViewController: UIViewController, UITableViewDelegate, UIT
      */
     func orderClimatElements() {
         orderedInfoClimatElements = Dictionary<Date, [ICInfoClimatElement]>()
+        
+        self.infoClimatElementList = self.infoClimatElementList.sorted(by:{ $0.date < $1.date })
         for infoClimat in infoClimatElementList
         {
             let dateString : String = infoClimat.date.getDateString()

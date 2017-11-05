@@ -16,7 +16,7 @@
         <!--Info Climat-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Info Climat" id="BYZ-38-t0r" customClass="ICListInfoClimatViewController" customModule="InfoClimat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Info Climat" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ICListInfoClimatViewController" customModule="InfoClimat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DX4-tW-4O9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

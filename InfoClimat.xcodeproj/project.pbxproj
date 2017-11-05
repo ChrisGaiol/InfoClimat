@@ -21,6 +21,12 @@
 		AA99FF841FAF6FD300E447EA /* ICClimatTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99FF831FAF6FD300E447EA /* ICClimatTypeEnum.swift */; };
 		AA99FF851FAF6FD300E447EA /* ICClimatTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99FF831FAF6FD300E447EA /* ICClimatTypeEnum.swift */; };
 		AA99FF891FAF71D600E447EA /* DateExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99FF881FAF71D600E447EA /* DateExtensionTests.swift */; };
+		AA99FF8B1FAF76DB00E447EA /* ICInfoClimatServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99FF8A1FAF76DA00E447EA /* ICInfoClimatServiceRequest.swift */; };
+		AA99FF8C1FAF76DB00E447EA /* ICInfoClimatServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99FF8A1FAF76DA00E447EA /* ICInfoClimatServiceRequest.swift */; };
+		AA99FF8F1FAF774000E447EA /* ICInfoClimatElementFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99FF8E1FAF774000E447EA /* ICInfoClimatElementFactory.swift */; };
+		AA99FF901FAF774000E447EA /* ICInfoClimatElementFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99FF8E1FAF774000E447EA /* ICInfoClimatElementFactory.swift */; };
+		AA99FF921FAF7E1600E447EA /* ICServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99FF911FAF7E1600E447EA /* ICServiceRequest.swift */; };
+		AA99FF931FAF7E1600E447EA /* ICServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99FF911FAF7E1600E447EA /* ICServiceRequest.swift */; };
 		AAFF4BF01FAF5E1100713D78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF4BEF1FAF5E1100713D78 /* AppDelegate.swift */; };
 		AAFF4BF21FAF5E1200713D78 /* ICListInfoClimatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF4BF11FAF5E1200713D78 /* ICListInfoClimatViewController.swift */; };
 		AAFF4BF51FAF5E1200713D78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAFF4BF31FAF5E1200713D78 /* Main.storyboard */; };
@@ -47,6 +53,9 @@
 		AA99FF801FAF6AED00E447EA /* ICInfoClimatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICInfoClimatTableViewCell.swift; sourceTree = "<group>"; };
 		AA99FF831FAF6FD300E447EA /* ICClimatTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICClimatTypeEnum.swift; sourceTree = "<group>"; };
 		AA99FF881FAF71D600E447EA /* DateExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionTests.swift; sourceTree = "<group>"; };
+		AA99FF8A1FAF76DA00E447EA /* ICInfoClimatServiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICInfoClimatServiceRequest.swift; sourceTree = "<group>"; };
+		AA99FF8E1FAF774000E447EA /* ICInfoClimatElementFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICInfoClimatElementFactory.swift; sourceTree = "<group>"; };
+		AA99FF911FAF7E1600E447EA /* ICServiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICServiceRequest.swift; sourceTree = "<group>"; };
 		AAFF4BEC1FAF5E1100713D78 /* InfoClimat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfoClimat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAFF4BEF1FAF5E1100713D78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAFF4BF11FAF5E1200713D78 /* ICListInfoClimatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICListInfoClimatViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +134,14 @@
 			path = TransverseTests;
 			sourceTree = "<group>";
 		};
+		AA99FF8D1FAF772300E447EA /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				AA99FF8E1FAF774000E447EA /* ICInfoClimatElementFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
 		AAFF4BE31FAF5E1100713D78 = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				AA99FF861FAF6FE500E447EA /* Enums */,
+				AA99FF8D1FAF772300E447EA /* Factories */,
 				AA99FF6C1FAF607100E447EA /* ICInfoClimatElement.swift */,
 			);
 			path = Models;
@@ -207,6 +225,8 @@
 		AAFF4C131FAF5E7900713D78 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				AA99FF911FAF7E1600E447EA /* ICServiceRequest.swift */,
+				AA99FF8A1FAF76DA00E447EA /* ICInfoClimatServiceRequest.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -316,12 +336,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA99FF761FAF690000E447EA /* ICInfoClimatElementMockDatas.swift in Sources */,
+				AA99FF8B1FAF76DB00E447EA /* ICInfoClimatServiceRequest.swift in Sources */,
 				AA99FF811FAF6AED00E447EA /* ICInfoClimatTableViewCell.swift in Sources */,
 				AA99FF7E1FAF6AA400E447EA /* ICDayHeaderTableViewCell.swift in Sources */,
 				AA99FF7A1FAF695A00E447EA /* DateExtension.swift in Sources */,
 				AAFF4BF21FAF5E1200713D78 /* ICListInfoClimatViewController.swift in Sources */,
+				AA99FF921FAF7E1600E447EA /* ICServiceRequest.swift in Sources */,
 				AAFF4BF01FAF5E1100713D78 /* AppDelegate.swift in Sources */,
 				AA99FF841FAF6FD300E447EA /* ICClimatTypeEnum.swift in Sources */,
+				AA99FF8F1FAF774000E447EA /* ICInfoClimatElementFactory.swift in Sources */,
 				AA99FF6D1FAF607100E447EA /* ICInfoClimatElement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,12 +354,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA99FF731FAF674F00E447EA /* ICInfoClimatElement.swift in Sources */,
+				AA99FF8C1FAF76DB00E447EA /* ICInfoClimatServiceRequest.swift in Sources */,
 				AA99FF891FAF71D600E447EA /* DateExtensionTests.swift in Sources */,
 				AA99FF7B1FAF695A00E447EA /* DateExtension.swift in Sources */,
 				AA99FF721FAF660900E447EA /* ICInfoClimatElementTests.swift in Sources */,
 				AA99FF7F1FAF6AA400E447EA /* ICDayHeaderTableViewCell.swift in Sources */,
+				AA99FF931FAF7E1600E447EA /* ICServiceRequest.swift in Sources */,
 				AA99FF851FAF6FD300E447EA /* ICClimatTypeEnum.swift in Sources */,
 				AA99FF771FAF690000E447EA /* ICInfoClimatElementMockDatas.swift in Sources */,
+				AA99FF901FAF774000E447EA /* ICInfoClimatElementFactory.swift in Sources */,
 				AA99FF821FAF6AED00E447EA /* ICInfoClimatTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
