@@ -69,11 +69,23 @@ class ICInfoClimatServiceRequest : ICServiceRequest {
                     let dataString = String(data: data, encoding: String.Encoding.utf8)
                     print("Received datas:\n\(dataString!)")
                     
-                    ICInfoClimatElementDAO.sharedInstance.saveJsonInCache(data)
-                    
                     do {
                         if let json = try JSONSerialization.jsonObject(with: data, options:[]) as? [String:AnyObject] {
+                            if let requestState = json["request_state"] as? Int {
+                                if requestState != 200 {
+                                    print("Error : Invalid request response")
+                                    self.delegate?.didThrowException(sender: self)
+                                    return
+                                }
+                            }
+                            else {
+                                print("Error : Invalid request response")
+                                self.delegate?.didThrowException(sender: self)
+                                return
+                            }
+                            
                             let infoClimatElements = ICInfoClimatElementFactory.sharedInstance.getInfoClimatElements(fromJson: json);
+                            ICInfoClimatElementDAO.sharedInstance.saveJsonInCache(data)
                             self.delegate?.didResponseWithInfoClimatElements(infoClimatElements, sender:self)
                         }
                     } catch {
