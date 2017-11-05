@@ -71,16 +71,12 @@ extension Date
      Get the name of the day with common terms like Today or Tomorrow
      - returns : A String containing the name of the day
      */
-    func getDayLibelle() -> String {
-        let date = Date(dateString: self.getDateString())
-        let todayDate = Date(dateString:Date().getDateString())
-        let tomorrowDate = Calendar.current.date(byAdding: .day, value: 1, to: todayDate)
-        
-        if todayDate == date
+    func getDayLibelle() -> String {       
+        if  Calendar.current.isDateInToday(self)
         {
             return "today"
         }
-        else if tomorrowDate == date
+        else if  Calendar.current.isDateInTomorrow(self)
         {
             return "tomorrow"
         }
