@@ -69,6 +69,8 @@ class ICInfoClimatServiceRequest : ICServiceRequest {
                     let dataString = String(data: data, encoding: String.Encoding.utf8)
                     print("Received datas:\n\(dataString!)")
                     
+                    ICInfoClimatElementDAO.sharedInstance.saveJsonInCache(data)
+                    
                     do {
                         if let json = try JSONSerialization.jsonObject(with: data, options:[]) as? [String:AnyObject] {
                             let infoClimatElements = ICInfoClimatElementFactory.sharedInstance.getInfoClimatElements(fromJson: json);

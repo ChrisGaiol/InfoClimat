@@ -44,17 +44,27 @@ class ICListInfoClimatViewController: UIViewController, UITableViewDelegate, UIT
         infoClimatRequest.sendRequest()
     }
     
+    /**
+     Show a Popup indicating a problem to the user and load cache datas
+     */
     func refreshEndsWithError() {
         let errorPopup = UIAlertController(title: "Désolé", message: "Impossible de charger les informations actuellement.", preferredStyle: UIAlertControllerStyle.alert)
         errorPopup.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-        self.present(errorPopup, animated: true, completion: nil)
+        self.present(errorPopup, animated: true, completion: {
+            self.refreshControl.endRefreshing() // Doesn't work if doing it before / after
+        })
         
-        // TODO : use cached datas
-        
-        DispatchQueue.main.async {
-            self.refreshControl.endRefreshing()
-            self.tableViewInfoClimat.reloadData()
-        }
+        self.loadCacheDatas()
+    }
+    
+    /**
+    Load datas in cache
+     */
+    func loadCacheDatas()
+    {
+        self.infoClimatElementList = ICInfoClimatElementDAO.sharedInstance.getElementsFromCache()
+        orderClimatElements()
+        self.tableViewInfoClimat.reloadData()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -77,11 +87,15 @@ class ICListInfoClimatViewController: UIViewController, UITableViewDelegate, UIT
     }
     
     func didResponseWithError(_ error: Error?, sender:ICServiceRequest) {
-        refreshEndsWithError()
+        DispatchQueue.main.async {
+            self.refreshEndsWithError()
+        }
     }
     
     func didThrowException(sender: ICServiceRequest) {
-        refreshEndsWithError()
+        DispatchQueue.main.async {
+            self.refreshEndsWithError()
+        }
     }
     
     // MARK: - UITableView Delegate / DataSource Implementation
@@ -101,6 +115,9 @@ class ICListInfoClimatViewController: UIViewController, UITableViewDelegate, UIT
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let cell = tableView.dequeueReusableCell(withIdentifier:"DayHeaderCell") as! ICDayHeaderTableViewCell
         
+        if orderedInfoClimatElements.count <= section { // Safety check
+            return cell
+        }
         let sectionDate = Array(orderedInfoClimatElements.keys).sorted(by:<)[section]
         
         cell.lblDay.text = sectionDate.getDayLibelle().uppercased()
@@ -112,10 +129,20 @@ class ICListInfoClimatViewController: UIViewController, UITableViewDelegate, UIT
         let cell = tableView.dequeueReusableCell(withIdentifier:"InfoClimatCell", for: indexPath) as! ICInfoClimatTableViewCell
         
         // Try to get InfoClimatElement for row
-        let sectionKey = Array(orderedInfoClimatElements.keys).sorted(by:<)[indexPath.section]
-        guard let infoClimatElement = orderedInfoClimatElements[sectionKey]?[indexPath.row] else {
+        if orderedInfoClimatElements.count <= indexPath.section { // Safety check
             return cell
         }
+        let sectionKey = Array(orderedInfoClimatElements.keys).sorted(by:<)[indexPath.section]
+        
+        
+        guard let infoClimatOfDay = orderedInfoClimatElements[sectionKey] else {
+            return cell
+        }
+        
+        if infoClimatOfDay.count <= indexPath.row { // Safety check
+            return cell
+        }
+        let infoClimatElement = infoClimatOfDay[indexPath.row]
         
         // Complete cell UI
         cell.lblTime.text = infoClimatElement.date.getTimeString()
