@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA99FF6D1FAF607100E447EA /* ICInfoClimatElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99FF6C1FAF607100E447EA /* ICInfoClimatElement.swift */; };
+		AA99FF721FAF660900E447EA /* ICInfoClimatElementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99FF711FAF660900E447EA /* ICInfoClimatElementTests.swift */; };
+		AA99FF731FAF674F00E447EA /* ICInfoClimatElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99FF6C1FAF607100E447EA /* ICInfoClimatElement.swift */; };
 		AAFF4BF01FAF5E1100713D78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF4BEF1FAF5E1100713D78 /* AppDelegate.swift */; };
 		AAFF4BF21FAF5E1200713D78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF4BF11FAF5E1200713D78 /* ViewController.swift */; };
 		AAFF4BF51FAF5E1200713D78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAFF4BF31FAF5E1200713D78 /* Main.storyboard */; };
 		AAFF4BF71FAF5E1200713D78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAFF4BF61FAF5E1200713D78 /* Assets.xcassets */; };
 		AAFF4BFA1FAF5E1200713D78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAFF4BF81FAF5E1200713D78 /* LaunchScreen.storyboard */; };
-		AAFF4C051FAF5E1200713D78 /* InfoClimatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF4C041FAF5E1200713D78 /* InfoClimatTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA99FF6C1FAF607100E447EA /* ICInfoClimatElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICInfoClimatElement.swift; sourceTree = "<group>"; };
+		AA99FF711FAF660900E447EA /* ICInfoClimatElementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICInfoClimatElementTests.swift; sourceTree = "<group>"; };
 		AAFF4BEC1FAF5E1100713D78 /* InfoClimat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfoClimat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAFF4BEF1FAF5E1100713D78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAFF4BF11FAF5E1200713D78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,7 +38,6 @@
 		AAFF4BF91FAF5E1200713D78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAFF4BFB1FAF5E1200713D78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAFF4C001FAF5E1200713D78 /* InfoClimatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfoClimatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AAFF4C041FAF5E1200713D78 /* InfoClimatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoClimatTests.swift; sourceTree = "<group>"; };
 		AAFF4C061FAF5E1200713D78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,6 +59,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA99FF6E1FAF60FF00E447EA /* ModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA99FF711FAF660900E447EA /* ICInfoClimatElementTests.swift */,
+			);
+			path = ModelTests;
+			sourceTree = "<group>";
+		};
 		AAFF4BE31FAF5E1100713D78 = {
 			isa = PBXGroup;
 			children = (
@@ -92,7 +103,7 @@
 		AAFF4C031FAF5E1200713D78 /* InfoClimatTests */ = {
 			isa = PBXGroup;
 			children = (
-				AAFF4C041FAF5E1200713D78 /* InfoClimatTests.swift */,
+				AA99FF6E1FAF60FF00E447EA /* ModelTests */,
 				AAFF4C061FAF5E1200713D78 /* Info.plist */,
 			);
 			path = InfoClimatTests;
@@ -101,6 +112,7 @@
 		AAFF4C0F1FAF5E3800713D78 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AA99FF6C1FAF607100E447EA /* ICInfoClimatElement.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -190,6 +202,7 @@
 					};
 					AAFF4BFF1FAF5E1200713D78 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = AAFF4BEB1FAF5E1100713D78;
 					};
@@ -241,6 +254,7 @@
 			files = (
 				AAFF4BF21FAF5E1200713D78 /* ViewController.swift in Sources */,
 				AAFF4BF01FAF5E1100713D78 /* AppDelegate.swift in Sources */,
+				AA99FF6D1FAF607100E447EA /* ICInfoClimatElement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAFF4C051FAF5E1200713D78 /* InfoClimatTests.swift in Sources */,
+				AA99FF731FAF674F00E447EA /* ICInfoClimatElement.swift in Sources */,
+				AA99FF721FAF660900E447EA /* ICInfoClimatElementTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,7 +409,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XR8Q9WHC9;
 				INFOPLIST_FILE = InfoClimat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.leboncoin.InfoClimat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -408,7 +425,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XR8Q9WHC9;
 				INFOPLIST_FILE = InfoClimat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.leboncoin.InfoClimat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,11 +441,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XR8Q9WHC9;
 				INFOPLIST_FILE = InfoClimatTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.leboncoin.InfoClimatTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InfoClimat.app/InfoClimat";
@@ -438,7 +460,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XR8Q9WHC9;
 				INFOPLIST_FILE = InfoClimatTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.leboncoin.InfoClimatTests;

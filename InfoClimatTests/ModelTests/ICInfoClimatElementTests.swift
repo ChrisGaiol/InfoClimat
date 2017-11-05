@@ -1,5 +1,5 @@
 //
-//  InfoClimatTests.swift
+//  ICInfoClimatElementTests.swift
 //  InfoClimatTests
 //
 //  Created by Christian Gaiola on 05/11/2017.
@@ -7,9 +7,8 @@
 //
 
 import XCTest
-@testable import InfoClimat
 
-class InfoClimatTests: XCTestCase {
+class ICInfoClimatElementTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -21,16 +20,12 @@ class InfoClimatTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testInitICInfoClimatElementByDate() {
+        let date = Date()
+        let infoClimatElement = ICInfoClimatElement(forDate:date)
+        
+        XCTAssertTrue(infoClimatElement.date == date)
+        
     }
     
 }
